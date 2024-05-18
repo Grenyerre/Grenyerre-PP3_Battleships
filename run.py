@@ -9,29 +9,41 @@ Legend:
 """
 from random import randint
 
-# Select game difficulty level
-level = input('Please select a level of difficulty: E (easy), M (medium), H (hard): ').lower()
-while level not in ['E', 'M', 'H']:
-    print('Invalid choice, please select a valid level of difficulty')
-    level = input('Please select a level of difficulty: E (easy), M (medium), H (hard): ').lower()
-    if level == 'E':
-        e_hidden_board = [[''] * 4 for x in range(4)]
-        e_guess_board = [[''] * 4  for x in range(4)]
-    elif level == 'M':
-        m_hidden_board = [[''] * 6 for x in range(6)]
-        m_guess_board = [[''] * 6 for x in range(6)]
-    else:
-        h_hidden_board = [[''] * 8 for x in range(8)]
-        h_guess_board = [[''] * 8 for x in range(8)]
+def easy_game(board):
+    for ship in range(5):
+        ship_row, ship_column = randint(0,3), randint(0,3)
+        while board[ship_row][ship_column] == "X":
+            ship_row, ship_column = get_ship_location()
+        board[ship_row][ship_column] = "X"
+    print_board(board):
+    print('   A B C D')
+    print('------------')
+    row_number = 1
+    for row in board:
+        print(" %d|%s |" % (row_number, " |".join(row)))
+        row_number += 1
 
+def medium_game(board):
+    for ship in range(5):
+        ship_row, ship_column = randint(0,5), randint(0,5)
+        while board[ship_row][ship_column] == "X":
+            ship_row, ship_column = get_ship_location()
+        board[ship_row][ship_column] = "X"
+    print_board(board):
+    print('   A B C D E F')
+    print('----------------')
+    row_number = 1
+    for row in board:
+        print(" %d|%s |" % (row_number, " |".join(row)))
+        row_number += 1
 
-# Construct the game board
-hidden_board = [[''] * 8 for x in range(8)]
-guess_board = [[''] * 8 for x in range(8)]
-
-letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
-
-def print_board(board):
+def hard_game(board):
+    for ship in range(5):
+        ship_row, ship_column = randint(0,7), randint(0,7)
+        while board[ship_row][ship_column] == "X":
+            ship_row, ship_column = get_ship_location()
+        board[ship_row][ship_column] = "X"
+    print_board(board):
     print('   A B C D E F G H')
     print('--------------------')
     row_number = 1
@@ -39,12 +51,20 @@ def print_board(board):
         print(" %d|%s |" % (row_number, " |".join(row)))
         row_number += 1
 
-def create_ships(board):
-    for ship in range(5):
-        ship_row, ship_column = randint(0,7), randint(0,7)
-        while board[ship_row][ship_column] == "X":
-            ship_row, ship_column = get_ship_location()
-        board[ship_row][ship_column] = "X"        
+# Select game difficulty level
+level = input('Please select a level of difficulty: E (easy), M (medium), H (hard): ').lower()
+while level not in ['E', 'M', 'H']:
+    print('Invalid choice, please select a valid level of difficulty')
+    level = input('Please select a level of difficulty: E (easy), M (medium), H (hard): ').lower()
+    if level == 'E':
+        def easy_game(board):
+    elif level == 'M':
+        def medium_game(board):
+    else:
+        def hard_game(board):
+
+
+letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}       
 
 def get_ship_location():
     row = input('Please enter a row number for your shot, between 1 and 8: ')
@@ -66,26 +86,25 @@ def count_hit_ships(board):
     return count
     
 
-create_ships(hidden_board)
+create_ships(e_hidden_board, m_hidden_board, h_hidden_board)
 
 turns = 10
 while turns > 0:
     print('\nWelcome to Battleship')
     print('---------------------- ')
-    print_board(hidden_board)
-    print_board(guess_board)
+    print_board()
     row, column = get_ship_location()
-    if guess_board[row][column] == "-":
+    if e_guess_board, m_guess_board, h_guess_board[row][column] == "-":
         print('You already guessed that location, it was a miss! Try again')
-    elif hidden_board[row][column] == "X":
+    elif e_hidden_board, m_hidden_board, h_hidden_board[row][column] == "X":
         print('Good shot! You hit a battleship')
-        guess_board[row][column] = "X"
+        e_guess_board, m_guess_board, h_guess_board[row][column] = "X"
         turns -= 1
     else:
         print('You missed!')
-        guess_board[row][column] = "-"
+        e_guess_board, m_guess_board, h_guess_board[row][column] = "-"
         turns -= 1
-    if count_hit_ships(guess_board) == 5:
+    if count_hit_ships(e_guess_board, m_guess_board, h_guess_board) == 5:
         print('Congratulations! You have sunk all the battleships')
         break
     print('You have ' + str(turns) + ' turns remaining')
