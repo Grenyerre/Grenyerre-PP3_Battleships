@@ -9,6 +9,22 @@ Legend:
 """
 from random import randint
 
+# Select game difficulty level
+level = input('Please select a level of difficulty: E (easy), M (medium), H (hard): ').lower()
+while level not in ['E', 'M', 'H']:
+    print('Invalid choice, please select a valid level of difficulty')
+    level = input('Please select a level of difficulty: E (easy), M (medium), H (hard): ').lower()
+    if level == 'E':
+        e_hidden_board = [[''] * 4 for x in range(4)]
+        e_guess_board = [[''] * 4  for x in range(4)]
+    elif level == 'M':
+        m_hidden_board = [[''] * 6 for x in range(6)]
+        m_guess_board = [[''] * 6 for x in range(6)]
+    else:
+        h_hidden_board = [[''] * 8 for x in range(8)]
+        h_guess_board = [[''] * 8 for x in range(8)]
+
+
 # Construct the game board
 hidden_board = [[''] * 8 for x in range(8)]
 guess_board = [[''] * 8 for x in range(8)]
