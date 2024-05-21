@@ -7,8 +7,10 @@ Legend:
 ' ' for available space
 '-' for missed shot
 """
+
+# import colorama
+# from colorama import Fore, Back, Style
 from random import randint
-from colorama import Fore, Back, Style
 
 """
 Construct the game boards via list comprehension

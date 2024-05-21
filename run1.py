@@ -8,7 +8,7 @@ Legend:
 '-' for missed shot
 """
 from random import randint
-from colorama import Fore, Back, Style
+# from colorama import Fore, Back, Style
 
 # Construct the game board
 hidden_board = [[''] * 8 for x in range(8)]

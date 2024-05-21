@@ -1,9 +1,9 @@
-# **Battleship - Code Institute Portfolio Project 3**
+# **Battleships - Code Institute Portfolio Project 3**
 
-Welcome to 'Battleship', a game of skill and chance where the player attempts to destroy their opponent's battleships.
+Welcome to 'Battleships', a game of skill and chance where the player attempts to destroy their opponent's battleships.
 To do this, they must predict the co-ordinates of their targets and use their limited shots wisely.
 
-Project Aim: To build a command line application that allows the user to play a logic game. A dataset will be created and edited via CRUD (Create, Read, Update, Delete) protocols.
+Project Aim: To build a command line application that allows the user to play a logic game. A dataset will be created by the computer and edited by the user.
 
 ![Am I Responsive graphic](./assets/images/).
 
@@ -11,17 +11,20 @@ Project Aim: To build a command line application that allows the user to play a 
 
 ## **User Experience (UX) & Design**
 
-The 
+This is my first project where the output is a shell terminal. Although limited to a basic colour palette and simple text effects, I wanted the output to be visually stimulating but also easy to read.  
 
 ### **User Stories**
 
-- As a user/player, I would like to see the title of the application at the top of the display.
+As a user/player:
+- I would like to see the title of the application at the top of the display.
+- I would like the instructions to be on show at the commencement of the game.
+- I would like to see the board onto which my guesses will be placed.
+- I would like to see a record of where I had placed my previous shots.
+- I would like to know whether my shot was successful or not.
+- I would like to know how many shots I have remaining.
+- 
 
 ### **Wireframe**
-
-![image of Catch The Mousie! game page](./assets/images/wireframe.png)
-
-The wireframe was created using Balsamiq.
 
 ### **Gameplay**
 
@@ -57,20 +60,8 @@ The font is taken from [Google Fonts](https://fonts.google.com/). It is called E
 
 ## **Features**
 
-### **Favicon**
-
-The favicon was created using [favicon.io](https://favicon.io/favicon-converter/).
-I used an image of the game's protagonist.
 
 ### **Settings Buttons**
-
-These are located at the top centre of the display. They allow the user to view the instructions, toggle the music on and off, and restart the game.
-
-- Upon clicking the 'Instructions' button, a modal appears containing written instructions of the game play. The modal can be closed by clicking the close button.
-- Upon landing, the music is muted. The music can be toggled on or off by clicking this button.
-- Upon clicking the 'Restart Game' button, the page will reload and all current score information will be lost.
-
-![image of the modal and its contents](./assets/images/instructions_screenshot.png)
 
 ### **Game Play Area**
 
