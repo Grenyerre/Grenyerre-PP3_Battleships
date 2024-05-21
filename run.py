@@ -59,5 +59,11 @@ def get_ship_location():
     return int(row) - 1, letters_to_numbers[column] 
 
 def count_hit_ships(board):
+    count = 0
+    for row in board:
+        for column in row:
+            if column == "X":
+                count += 1
+    return count
 
 
