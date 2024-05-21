@@ -47,7 +47,16 @@ def create_ships(board):
         board[ship_row][ship_column] = "X"  
 
 def get_ship_location():
-
+    row = input('  Please enter a row number for your shot, between 1 and 8: ')
+    while row not in '12345678':
+        print('  Number outside of board, please enter a valid row number (1 - 8): ')
+        row = input('  Please enter a row number for your shot, between 1 and 8: ')
+    
+    column = input('  Please enter a column letter for your shot, between A and H: ').upper()
+    while column not in 'ABCDEFGH':
+        print('  Number outside of board, please enter a valid column letter (A - H): ')
+        column = input('  Please enter a column letter for your shot, between A and H: ').upper()
+    return int(row) - 1, letters_to_numbers[column] 
 
 def count_hit_ships(board):
 
