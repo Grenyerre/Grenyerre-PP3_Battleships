@@ -66,4 +66,9 @@ def count_hit_ships(board):
                 count += 1
     return count
 
+# Call the create_ships function to populate the hidden board
+create_ships(hidden_board)
+
+# Set the number of turns to 10
+turns = 10
 
