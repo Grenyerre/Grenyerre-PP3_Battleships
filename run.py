@@ -28,13 +28,13 @@ letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H
 
 def print_board(board):
     # Print column headings and border
-    print('                    A B C D E F G H')
-    print('                ---------------------')
+    print('                      A B C D E F G H')
+    print('                  ---------------------')
 
     # Print row number and borders
     row_number = 1
     for row in board:
-        print('                |' + str(row_number) + '| ' + ' '.join(row) + ' |')
+        print('                  |' + str(row_number) + '| ' + ' '.join(row) + ' |')
         row_number += 1
 
 def create_ships(board):
@@ -52,15 +52,13 @@ def get_ship_location():
     print('\n')
     row = input('  Please enter a row number for your shot, between 1 and 8: ')
     while row not in '12345678':
-        print('  \nNumber outside of board, please enter a valid row number (1 - 8): ')
-        print('\n')
+        print('  Number outside of board, please enter a valid row number (1 - 8): ')
         row = input('  Please enter a row number for your shot, between 1 and 8: ')
     
     print('\n')
     column = input('  Please enter a column letter for your shot, between A and H: ').upper()
     while column not in 'ABCDEFGH':
-        print('  \nNumber outside of board, please enter a valid column letter (A - H): ')
-        print('\n')
+        print('  Number outside of board, please enter a valid column letter (A - H): ')
         column = input('  Please enter a column letter for your shot, between A and H: ').upper()
     return int(row) - 1, letters_to_numbers[column] 
 
@@ -75,7 +73,7 @@ def count_hit_ships(board):
 # Call the create_ships function to populate the hidden board
 create_ships(hidden_board)
 
-# Set the number of turns to 10
+# Set the number of turns (shots) to 10
 turns = 3
 
 print('  =====================================================')
@@ -89,7 +87,7 @@ print('  =====================================================')
 while turns > 0:
 
     print('  =====================================================')
-    print('  ==             You have ' + str(turns) + ' shots left               ==')
+    print('  ==              You have ' + str(turns) + ' shots left              ==')
     print('  =====================================================')
     # Print hidden board for testing purposes
     # print_board(hidden_board)
@@ -111,7 +109,7 @@ while turns > 0:
         turns -= 1
     else:
         # Do not show message if turns = 1
-        if turns >= 1:
+        if turns == 1:
             print('         =========================================')
             print('         ==         MISS! Shoot again.          ==')
             print('         =========================================')
