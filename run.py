@@ -14,14 +14,14 @@ from random import randint
 
 """
 Construct the game boards via list comprehension
-to be populated with 'X' for placed and hit battleship
+to be populated with 'X' for placed and hit battleships
 """
 hidden_board = [['O'] * 8 for x in range(8)]
 guess_board = [['O'] * 8 for x in range(8)]
 
 """
 Dictionary to convert letters to numbers allows user to use
-Integers for row and column input
+integers for row and column input
 """
 letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
 
@@ -82,7 +82,7 @@ while turns > 0:
     print('             Your crew is depending on you!')
     print('  Choose a row and a column to fire at the enemy ships!')
     print('  =====================================================')
-    print('  ==   You have ' + str(turns) + ' shots remaining   ==')
+    print('  ==           You have ' + str(turns) + ' shots remaining          ==')
     print('  =====================================================')
     # Print hidden board for testing purposes
     print_board(hidden_board)
@@ -110,13 +110,18 @@ while turns > 0:
         turns -= 1
     if count_hit_ships(guess_board) == 5:
         print('  =========================================')
-        print('  ==          Congratulations!           ==')
+        print('  ==          CONGRATULATIONS!           ==')
         print('  ==  You have sunk all the battleships  ==')
-        print('  == You have saved your crew! Well done!==')
+        print('  == You have saved your crew! Well done.==')
         print('  =========================================')
         break
     print('You have ' + str(turns) + ' shots remaining')
     if turns == 0:
-        print('Game Over! You have run out of shots. The enemy has won!')
+        print('  =========================================')
+        print('  ==          G A M E   O V E R !        ==')
+        print('  ==      You have run out of shots.     ==')
+        print('  ==     The enemy has won this time.    ==')
+        print('  ==    BETTER LUCK NEXT TIME, CAPTAIN.  ==')
+        print('  =========================================')
         break
 
