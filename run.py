@@ -28,8 +28,8 @@ letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H
 
 def print_board(board):
     # Print column headings and border
-    print('                  A B C D E F G H')
-    print('                 ___________________')
+    print('                    A B C D E F G H')
+    print('                 -----------------------')
 
     # Print row number and borders
     row_number = 1
@@ -103,11 +103,12 @@ while turns > 0:
         guess_board[row][column] = "X"
         turns -= 1
     else:
+        # Do not show message if turns = 1
         if turns >= 1:
-        print('      =========================================')
-        print('      ==         MISS! Shoot again.          ==')
-        print('      =========================================')
-        guess_board[row][column] = "M"
+            print('      =========================================')
+            print('      ==         MISS! Shoot again.          ==')
+            print('      =========================================')
+            guess_board[row][column] = "M"
         turns -= 1
     if count_hit_ships(guess_board) == 5:
         print('      =========================================')
