@@ -24,13 +24,13 @@ Dictionary to convert letters to numbers allows user to use
 integers for row and column input
 """
 letters_to_numbers = {
-    'A': 0, 
-    'B': 1, 
-    'C': 2, 
-    'D': 3, 
-    'E': 4, 
-    'F': 5, 
-    'G': 6, 
+    'A': 0,
+    'B': 1,
+    'C': 2,
+    'D': 3,
+    'E': 4,
+    'F': 5,
+    'G': 6,
     'H': 7
     }
 
@@ -43,7 +43,7 @@ def print_board(board):
     # Print row number and borders
     row_number = 1
     for row in board:
-        print('                  |' + str(row_number) + '| ' + ' '.join(row) + ' |')
+        print('                  |' + str(row_number) + '| ' + ' '.join(row))
         row_number += 1
 
 
@@ -65,13 +65,13 @@ def get_ship_location():
     while row not in '12345678':
         print('  Number outside of board, invalid row number.')
         row = input('  Enter a row for your shot, (1 - 8): ')
-    
+
     print('\n')
     column = input('  Please enter a column for your shot, (A - H): ').upper()
     while column not in 'ABCDEFGH':
         print('  Number outside of board, invalid column letter.')
         column = input('  Enter a column for your shot, (A - H):').upper()
-    return int(row) - 1, letters_to_numbers[column] 
+    return int(row) - 1, letters_to_numbers[column]
 
 
 def count_hit_ships(board):
@@ -84,6 +84,7 @@ def count_hit_ships(board):
 
 # Call the create_ships function to populate the hidden board
 create_ships(hidden_board)
+
 
 # Set the number of turns (shots) to 10
 turns = 3
@@ -99,7 +100,7 @@ print('  =====================================================')
 while turns > 0:
 
     print('  =====================================================')
-    print('  ==              You have ' + str(turns) + ' shots left              ==')
+    print('         You have ' + str(turns) + ' shots left.')
     print('  =====================================================')
     # Print hidden board for testing purposes
     # print_board(hidden_board)
@@ -127,7 +128,7 @@ while turns > 0:
             print('         =========================================')
             guess_board[row][column] = "M"
         turns -= 1
-    
+
     # If the user has hit all the battleships, end the game
     if count_hit_ships(guess_board) == 5:
         print('         =========================================')
@@ -136,7 +137,7 @@ while turns > 0:
         print('         == You have saved your crew! Well done.==')
         print('         =========================================')
         break
-    
+
     # If the user has no turns left, end the game
     if turns == 0:
         print('         =========================================')
@@ -146,4 +147,3 @@ while turns > 0:
         print('         ==    BETTER LUCK NEXT TIME, CAPTAIN.  ==')
         print('         =========================================')
         break
-
