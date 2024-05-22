@@ -4,8 +4,8 @@ Version 1.0
 
 Legend:
 'X' for placing ship and hit battleship
-' ' for available space
-'-' for missed shot
+'O' for available space
+'M' for missed shot
 """
 
 # import colorama
@@ -16,8 +16,8 @@ from random import randint
 Construct the game boards via list comprehension
 to be populated with 'X' for placing ship and hit battleship
 """
-hidden_board = [[''] * 8 for x in range(8)]
-guess_board = [[''] * 8 for x in range(8)]
+hidden_board = [['O'] * 8 for x in range(8)]
+guess_board = [['O'] * 8 for x in range(8)]
 
 """
 Dictionary to convert letters to numbers allows user to use
@@ -80,7 +80,7 @@ while turns > 0:
     print_board(hidden_board)
     print_board(guess_board)
     row, column = get_ship_location()
-    if guess_board[row][column] == "-":
+    if guess_board[row][column] == "M":
         print('You already guessed that location, it was a miss! Try again')
     elif hidden_board[row][column] == "X":
         print('Good shot! You hit a battleship')
@@ -88,7 +88,7 @@ while turns > 0:
         turns -= 1
     else:
         print('You missed!')
-        guess_board[row][column] = "-"
+        guess_board[row][column] = "M"
         turns -= 1
     if count_hit_ships(guess_board) == 5:
         print('Congratulations! You have sunk all the battleships')
