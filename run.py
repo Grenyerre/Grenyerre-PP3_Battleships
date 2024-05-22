@@ -28,8 +28,8 @@ letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H
 
 def print_board(board):
     # Print column headings and border
-    print('                     A B C D E F G H')
-    print('                 ---------------------')
+    print('                    A B C D E F G H')
+    print('                ---------------------')
 
     # Print row number and borders
     row_number = 1
@@ -49,14 +49,18 @@ def create_ships(board):
         board[ship_row][ship_column] = "X"  
 
 def get_ship_location():
+    print('\n')
     row = input('  Please enter a row number for your shot, between 1 and 8: ')
     while row not in '12345678':
-        print('  Number outside of board, please enter a valid row number (1 - 8): ')
+        print('  \nNumber outside of board, please enter a valid row number (1 - 8): ')
+        print('\n')
         row = input('  Please enter a row number for your shot, between 1 and 8: ')
     
+    print('\n')
     column = input('  Please enter a column letter for your shot, between A and H: ').upper()
     while column not in 'ABCDEFGH':
-        print('  Number outside of board, please enter a valid column letter (A - H): ')
+        print('  \nNumber outside of board, please enter a valid column letter (A - H): ')
+        print('\n')
         column = input('  Please enter a column letter for your shot, between A and H: ').upper()
     return int(row) - 1, letters_to_numbers[column] 
 
@@ -72,7 +76,7 @@ def count_hit_ships(board):
 create_ships(hidden_board)
 
 # Set the number of turns to 10
-turns = 4
+turns = 3
 
 print('  =====================================================')
 print('  ==             Welcome to Battleships              ==')
@@ -85,7 +89,7 @@ print('  =====================================================')
 while turns > 0:
 
     print('  =====================================================')
-    print('  ==         You have ' + str(turns) + ' shots left           ==')
+    print('  ==             You have ' + str(turns) + ' shots left               ==')
     print('  =====================================================')
     # Print hidden board for testing purposes
     # print_board(hidden_board)
