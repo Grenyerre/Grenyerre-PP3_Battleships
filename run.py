@@ -28,13 +28,13 @@ letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H
 
 def print_board(board):
     # Print column headings and border
-    print('                    A B C D E F G H')
-    print('                 -----------------------')
+    print('                     A B C D E F G H')
+    print('                 ---------------------')
 
     # Print row number and borders
     row_number = 1
     for row in board:
-        print('                | ' + str(row_number) + '| ' + ' '.join(row) + ' |')
+        print('                |' + str(row_number) + '| ' + ' '.join(row) + ' |')
         row_number += 1
 
 def create_ships(board):
@@ -72,17 +72,20 @@ def count_hit_ships(board):
 create_ships(hidden_board)
 
 # Set the number of turns to 10
-turns = 2
+turns = 4
+
+print('  =====================================================')
+print('  ==             Welcome to Battleships              ==')
+print('  =====================================================')
+print('  ==         You have 5 battleships to sink          ==')
+print('  ==         Your crew is depending on you!          ==')
+print('  == Choose a row and a column to fire at the enemy! ==')
+print('  =====================================================')
 # While loop to run the game until the user has no turns left
 while turns > 0:
+
     print('  =====================================================')
-    print('  ==             Welcome to Battleships              ==')
-    print('  =====================================================')
-    print('             You have 5 battleships to sink')
-    print('             Your crew is depending on you!')
-    print('  Choose a row and a column to fire at the enemy ships!')
-    print('  =====================================================')
-    print('  ==           You have ' + str(turns) + ' shots remaining           ==')
+    print('  ==         You have ' + str(turns) + ' shots left           ==')
     print('  =====================================================')
     # Print hidden board for testing purposes
     # print_board(hidden_board)
