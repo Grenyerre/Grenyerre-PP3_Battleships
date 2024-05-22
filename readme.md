@@ -29,12 +29,16 @@ As a player:
 ### **Gameplay**
 
 Once the game is run, the title and instructions are shown on the terminal. Also on display is the player's 'guess' board.
-This shows the location of any shots previously made and will show if an enemy's ship has been hit.
+This shows the location of any shots previously made and will show the location of an enemy's ship that has been hit.
 
 - The player is asked to enter a row number, between 1 and 8, for their shot.
 - If the number inputed is less than 1 or greater than 8, the player is asked to re-enter a number. 
 - The player is asked to enter a column letter, between A and H, for their shot.
 - If the letter inputed is anything other than A - H, the player is asked to re-enter a letter.
+- The player is informed whether their shot was successful or not.
+- They are also informed how many turns or shots remain.
+- The gameplay continues until all of the enemy's ships have been destroyed or the player has used all their turns.
+- A message will be displayed to indicator which scenario ended the game.
 
 ### **Colour Choice**
 
@@ -51,49 +55,24 @@ The font is taken from [Google Fonts](https://fonts.google.com/). It is called E
 
 ## **Features**
 
-
-### **Settings Buttons**
-
-### **Game Play Area**
-
-This is the largest section of the page and displays the images of the game's protagonist and antagonist. These images reflect the actions of the player and the computer choice. They also vary at the end of the game to reflect the cat's state of satiety.
-
-### **Control Buttons**
-
-These allow the player to input their choice from which hole they believe the mouse will appear; left, centre, or right.
-
-### **Score Area**
-
-Here is displayed in numbers how many mice have been caught (eaten!) and how many have escaped.
-
-### **Game State Area**
-
-Messages are displayed here to inform the player of the required action, the result of their actions, and the final score messages.
-
-### **Footer**
-
-Contains information regarding the copyright owner of the images and music used and the site's author.
+- Ships are placed randomly each time the game is played.
+- The input from the player is checked for validity, i.e. you cannot enter a co-ordinate off the board.
+- The player cannot shoot at the same location numerous times.
 
 ## **Ideas In Development**
 
-- Increase the number of holes from which the mouse can escape to five. Probability: 70%.
-- To separate the music and sound effects so that they can be toggled on/off independently. Probability: 50%.
-- Alter the game graphics to allow the user to choose the cat's colouring; black, tortoiseshell, ginger, grey, etc. Probability: 10%.
-- To include a high score table to record the highest scores, the date and the player name. Probability: 10%.
+- The player is able to select a level of difficulty whereby the board size and number of shots may increase or decrease. Probability: 70%.
+- Instead of letters signifying positions, hits and misses, using other ANSI characters. Probability: 50%.
+- The ships are different sizes: 1 x 5, 2 x 3, 1 x 3, etc. Probability: 10%.
+- If the above is implemented, I would also like a 'mine' feature where the surrounding 8 squares are hit in addition. Probability: 10%.
 
 ## **Software Used**
 
 Below is a list of the software/applications used in the construction of this project.
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-  - Used to create the structure of the webpage.
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-  - Used to style the content of the webpage.
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-  - Used to implement functionality in the game.
 - [GitHub](https://github.com/)
   - Used to store and manage the project's code.
-- [Codeanywhere](https://app.codeanywhere.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
   - Used as the project's Independent Development Environment (IDE).
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
   - Used in the testing and debugging process.
