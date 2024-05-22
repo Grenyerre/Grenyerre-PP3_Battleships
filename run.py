@@ -98,19 +98,21 @@ while turns > 0:
     # Compare the user guess to the hidden board
     elif hidden_board[row][column] == "X":
         print('  =========================================')
-        print('  ==   Good shot! You hit a battleship   ==')
+        print('  ==   Good shot, you HIT a battleship!  ==')
         print('  =========================================')
         guess_board[row][column] = "X"
         turns -= 1
     else:
-        print('You missed!')
+        print('  =========================================')
+        print('  ==         MISS! Shoot again.          ==')
+        print('  =========================================')
         guess_board[row][column] = "M"
         turns -= 1
     if count_hit_ships(guess_board) == 5:
         print('Congratulations! You have sunk all the battleships')
         break
-    print('You have ' + str(turns) + ' turns remaining')
+    print('You have ' + str(turns) + ' shots remaining')
     if turns == 0:
-        print('Game Over! You have run out of turns')
+        print('Game Over! You have run out of shots. The enemy has won!')
         break
 
