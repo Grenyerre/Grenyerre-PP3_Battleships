@@ -75,8 +75,9 @@ create_ships(hidden_board)
 turns = 10
 # While loop to run the game until the user has no turns left
 while turns > 0:
-    print('\nWelcome to Battleship')
-    print('---------------------- ')
+    print('  ==============================')
+    print('  ==  Welcome to Battleships  ==')
+    print('  ==============================')
     print_board(hidden_board)
     print_board(guess_board)
     row, column = get_ship_location()
