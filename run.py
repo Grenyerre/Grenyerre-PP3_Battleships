@@ -113,6 +113,8 @@ while turns > 0:
             print('         =========================================')
             guess_board[row][column] = "M"
         turns -= 1
+    
+    # If the user has hit all the battleships, end the game
     if count_hit_ships(guess_board) == 5:
         print('         =========================================')
         print('         ==          CONGRATULATIONS!           ==')
@@ -120,7 +122,8 @@ while turns > 0:
         print('         == You have saved your crew! Well done.==')
         print('         =========================================')
         break
-    print('You have ' + str(turns) + ' shots remaining')
+    
+    # If the user has no turns left, end the game
     if turns == 0:
         print('         =========================================')
         print('         ==          G A M E   O V E R !        ==')
