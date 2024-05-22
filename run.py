@@ -75,16 +75,31 @@ create_ships(hidden_board)
 turns = 10
 # While loop to run the game until the user has no turns left
 while turns > 0:
-    print('  ==============================')
-    print('  ==  Welcome to Battleships  ==')
-    print('  ==============================')
+    print('  =====================================================')
+    print('  ==             Welcome to Battleships              ==')
+    print('  =====================================================')
+    print('             You have 5 battleships to sink')
+    print('             Your crew is depending on you!')
+    print('  Choose a row and a column to fire at the enemy ships!')
+    print('  =====================================================')
+    print('  ==   You have ' + str(turns) + ' shots remaining   ==')
+    print('  =====================================================')
+    # Print hidden board for testing purposes
     print_board(hidden_board)
+    # Print guess board
     print_board(guess_board)
     row, column = get_ship_location()
+    # Check if the user has already guessed the location
     if guess_board[row][column] == "M":
-        print('You already guessed that location, it was a miss! Try again')
+        print('  =========================================')
+        print('  == You already guessed that location.  ==')
+        print('  ==     !t was a miss! Try again.       ==')
+        print('  =========================================')
+    # Compare the user guess to the hidden board
     elif hidden_board[row][column] == "X":
-        print('Good shot! You hit a battleship')
+        print('  =========================================')
+        print('  ==   Good shot! You hit a battleship   ==')
+        print('  =========================================')
         guess_board[row][column] = "X"
         turns -= 1
     else:
