@@ -1,7 +1,7 @@
 # **Battleships - Code Institute Portfolio Project 3**
 
 Welcome to 'Battleships', a game of skill and chance where the player attempts to destroy their opponent's battleships.
-To do this, they must predict the co-ordinates of their targets and use their limited shots wisely.
+An enemy has 5 ships located at random locations on an 8 x 8 board, each ship occupies one square. The player must predict the co-ordinates of their targets and use their limited shots wisely as they cannot see the locations of their enemy's ships.
 
 Project Aim: To build a command line application that allows the user to play a logic game. A dataset will be created by the computer and edited by the user.
 
@@ -11,11 +11,11 @@ Project Aim: To build a command line application that allows the user to play a 
 
 ## **User Experience (UX) & Design**
 
-This is my first project where the output is a shell terminal. Although limited to a basic colour palette and simple text effects, I wanted the output to be visually stimulating but also easy to read.  
+This is my first project where the output is a shell terminal. Although limited to a basic colour palette and simple text effects, I wanted the output to be visually stimulating but also easy to read. This involves manually entering numerous 'spaces' in the user messages in order to centralise specific information and 'tab' away from the left hand side of the display.  
 
 ### **User Stories**
 
-As a user/player:
+As a player:
 - I would like to see the title of the application at the top of the display.
 - I would like the instructions to be on show at the commencement of the game.
 - I would like to see the board onto which my guesses will be placed.
@@ -28,22 +28,13 @@ As a user/player:
 
 ### **Gameplay**
 
-Once the 'Play Game' button on the 'Welcome' page has been clicked, the 'Game' page is displayed and gameplay can commence.
+Once the game is run, the title and instructions are shown on the terminal. Also on display is the player's 'guess' board.
+This shows the location of any shots previously made and will show if an enemy's ship has been hit.
 
-- Displayed on the screen are three holes infront of a hungry cat.
-- The aim of the game is to predict from which hole a mouse will appear and direct the cat to the hole, so that it can eat the escaping mouse.
-- You do this by selecting one of the holes by clicking a control button, marked 'LEFT', 'CENTRE', or 'RIGHT'.
-- The image will now change.
-  - If you have selected the correct hole, the image will display the cat holding the mouse by its tail.
-  - Otherwise, the image will display the cat pouncing towards the chosen hole and the mouse escaping from another hole.
-- The message in the 'Game State' area and the score will also change. It will state which hole both you and the mouse chose.
-  - If you selected the correct hole, 'Yum yum!' is displayed and 'Eaten' increases by 1.
-  - Otherwise, 'Better luck next time.' is diplayed and 'Escaped' increases by 1.
-    -The game ends when 'Eaten' + 'Escaped' = 5. The image and 'Game State' message also change.
-  - If 'Eaten' is 0 or 1, the image displays a hungry cat and the message states, 'Never mind, 'catname' is still hungry. More mice needed.'.
-  - If 'Eaten' is 2 or 3, the image displays a cat washing itself and the message states, 'Good attempt! 'catname' is almost full.'.
-  - If 'Eaten' is 4 or 5, the image displays a cat with a mouse in its mouth and the message states, 'Well done! 'catname' has achieved satiety.'.
-  - In each of the above scenarios, 'To play again, please press the 'Restart Button', is shown below the messages.
+- The player is asked to enter a row number, between 1 and 8, for their shot.
+- If the number inputed is less than 1 or greater than 8, the player is asked to re-enter a number. 
+- The player is asked to enter a column letter, between A and H, for their shot.
+- If the letter inputed is anything other than A - H, the player is asked to re-enter a letter.
 
 ### **Colour Choice**
 
