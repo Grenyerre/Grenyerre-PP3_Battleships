@@ -14,7 +14,7 @@ from random import randint
 
 """
 Construct the game boards via list comprehension
-to be populated with 'X' for placing ship and hit battleship
+to be populated with 'X' for placed and hit battleship
 """
 hidden_board = [['O'] * 8 for x in range(8)]
 guess_board = [['O'] * 8 for x in range(8)]
