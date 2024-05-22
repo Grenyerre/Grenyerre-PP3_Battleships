@@ -28,13 +28,13 @@ letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H
 
 def print_board(board):
     # Print column headings and border
-    print('  A B C D E F G H')
-    print('------------------')
+    print('                  A B C D E F G H')
+    print('                 ___________________')
 
     # Print row number and borders
     row_number = 1
     for row in board:
-        print(str(row_number) + '|' + ' '.join(row) + '|')
+        print('                | ' + str(row_number) + '| ' + ' '.join(row) + ' |')
         row_number += 1
 
 def create_ships(board):
@@ -72,7 +72,7 @@ def count_hit_ships(board):
 create_ships(hidden_board)
 
 # Set the number of turns to 10
-turns = 10
+turns = 2
 # While loop to run the game until the user has no turns left
 while turns > 0:
     print('  =====================================================')
@@ -82,46 +82,47 @@ while turns > 0:
     print('             Your crew is depending on you!')
     print('  Choose a row and a column to fire at the enemy ships!')
     print('  =====================================================')
-    print('  ==           You have ' + str(turns) + ' shots remaining          ==')
+    print('  ==           You have ' + str(turns) + ' shots remaining           ==')
     print('  =====================================================')
     # Print hidden board for testing purposes
-    print_board(hidden_board)
+    # print_board(hidden_board)
     # Print guess board
     print_board(guess_board)
     row, column = get_ship_location()
     # Check if the user has already guessed the location
     if guess_board[row][column] == "M":
-        print('  =========================================')
-        print('  == You already guessed that location.  ==')
-        print('  ==     !t was a miss! Try again.       ==')
-        print('  =========================================')
+        print('      =========================================')
+        print('      == You already guessed that location.  ==')
+        print('      ==     !t was a miss! Try again.       ==')
+        print('      =========================================')
     # Compare the user guess to the hidden board
     elif hidden_board[row][column] == "X":
-        print('  =========================================')
-        print('  ==   Good shot, you HIT a battleship!  ==')
-        print('  =========================================')
+        print('      =========================================')
+        print('      ==   Good shot, you HIT a battleship!  ==')
+        print('      =========================================')
         guess_board[row][column] = "X"
         turns -= 1
     else:
-        print('  =========================================')
-        print('  ==         MISS! Shoot again.          ==')
-        print('  =========================================')
+        if turns >= 1:
+        print('      =========================================')
+        print('      ==         MISS! Shoot again.          ==')
+        print('      =========================================')
         guess_board[row][column] = "M"
         turns -= 1
     if count_hit_ships(guess_board) == 5:
-        print('  =========================================')
-        print('  ==          CONGRATULATIONS!           ==')
-        print('  ==  You have sunk all the battleships  ==')
-        print('  == You have saved your crew! Well done.==')
-        print('  =========================================')
+        print('      =========================================')
+        print('      ==          CONGRATULATIONS!           ==')
+        print('      ==  You have sunk all the battleships  ==')
+        print('      == You have saved your crew! Well done.==')
+        print('      =========================================')
         break
     print('You have ' + str(turns) + ' shots remaining')
     if turns == 0:
-        print('  =========================================')
-        print('  ==          G A M E   O V E R !        ==')
-        print('  ==      You have run out of shots.     ==')
-        print('  ==     The enemy has won this time.    ==')
-        print('  ==    BETTER LUCK NEXT TIME, CAPTAIN.  ==')
-        print('  =========================================')
+        print('      =========================================')
+        print('      ==          G A M E   O V E R !        ==')
+        print('      ==      You have run out of shots.     ==')
+        print('      ==     The enemy has won this time.    ==')
+        print('      ==    BETTER LUCK NEXT TIME, CAPTAIN.  ==')
+        print('      =========================================')
         break
 
