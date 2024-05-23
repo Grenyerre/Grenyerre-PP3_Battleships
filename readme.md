@@ -147,14 +147,22 @@ game.html
 
 ## **Deployment**
 
-The site was deployed to GitHub pages.
+This code was deployed utilising Code Institute's mock terminal for Heroku.
+The steps for deployment are as follows:
+- The repository is forked or cloned.
+- A new Heroku app is created.
+- The buildbacks are set to Python then NodeJS (the order must be maintained).
+- Ensure that the repository is linked to the Heroku app.
+- Click on 'Deploy'.
+
+Thank you to Matt Rudge, Senior Product Developer for Code Institute, for the deployment information.
 
 ## **Credits**
 
-- I would like to credit a Code Institute alumni, Adam Gilroy, with the game layout upon which 'Catch The Mousie!' is based.
-- I visited w3schools.com numerous times during this project's development. The code for the modal is based upon this page; [w3schools css modal how to](https://w3schools.com/howto/howto_css_modals.asp/).
-- I also visited 'Stack Overflow', w3docs.com, and developer.mozilla.org to check syntaxes and correct usage.
+- I would like to credit Garrett upon whose YouTube channel 'Knowledge Mavens' the structure of my code is based.
+- I would like to credit Code Institute upon whose mock terminal this code is deployed.
+- I also visited the following websites: 'Stack Overflow', 'Geeks for Geeks', 'Python Loop' and 'Real Python' to check syntaxes and correct usage of specific techniques.
 
 ## **Acknowledgements**
 
-I would like to thank my mentor(s), Luke Buchanan and Daisy McGirr (who stood in for Luke whilst on leave) for their guidance, understanding and support. I would also like to thank John and Martin from the Code Institute Tutoring Team for their assistance. Additionally, I would like to thank my wife Tracy for her consistent resilience, support, and encouragement.
+I would like to thank my mentor Luke Buchanan for his invaluable guidance, understanding and support. Additionally, I would like to thank Dan Bader at realpython.com and finally my wife Tracy for her consistent resilience, support, and encouragement.
