@@ -74,62 +74,20 @@ Below is a list of the software/applications used in the construction of this pr
   - Used to store and manage the project's code.
 - [Visual Studio Code](https://code.visualstudio.com/)
   - Used as the project's Independent Development Environment (IDE).
-
 - [Am I Responsive](https://ui.dev/amiresponsive)
   - Used to create an image of the various display sizes of the site.
 
 ## **Testing**
 
+### **Game Testing**
 ![screenshot of MS Excel testing document](./assets/images/excel_testing_screenshot.png)
 
-### Alternative Browsers
-
-Once deployed, I tested the site using the following browsers; Google Chrome, Mozilla Firefox, Microsoft Edge, and Opera Software's Opera. Each browser loaded successfully and no issues were detected.
-
-Google Chrome
-![screenshot of site running on Google Chrome](./assets/images/chrome_screenshot.png)
-
-Mozilla Firefox
-![screenshot of site running on Mozilla Firefox](./assets/images/firefox_screenshot.png)
-
-Microsoft Edge
-![screenshot of site running on Microsoft Edge](./assets/images/edge_screenshot.png)
-
-Opera Software Opera
-![screenshot of site running on Opera](./assets/images/opera_screenshot.png)
 
 ### Software Validation Testing
 
-The warnings issued on the HTML documents seem to be an aftereffect of Codeanywhere's IDE. I have attempted to remove the unnecessary slashes however they always return once reloaded.
+Code was tested via Code Institute's Python Linter to PEP8. There is only one error showing, "<u>86<u>: E305 expected 2 blank lines after class of function definition, found 1." Lines 87 and 88 are blank.
 
-index.html
-![screenshot of w3c validator index.html](./assets/images/validator_index.html_screenshot.png)
 
-"Section lacks heading" - I have been informed by my peers that it is best practice to use sections in this case.
-"Empty heading" - I have been informed that the HTML still passes validation however it is is slight misuse of semantics.
-
-game.html
-![screenshot of w3c validator game.html](./assets/images/validator_game.html_screenshot.png)
-
-style.css
-![screenshot of w3c validator css](./assets/images/validator_css_screenshot.png)
-
-I have carried out some research into the 'Best Practices' issue that reduced the score to 95%. I discussed this research with my mentor and it was decided to focus on other issues due to the time restrains. I will investigate further when time allows.
-
-I am unhappy with the 'Performance' score. When time allows, I will alter the image sizes to see if that increases the performance but doesn't distract from the gameplay.
-
-Google Chrome DevTools Lighthouse
-![screenshot of lighthouse validation](./assets/images/lighthouse_screenshot.png)
-
-Accessibility check: wave.webaim.com
-
-index.html
-
-![screenshot of wave.webaim.com validation of index.html](./assets/images/webaim_index.html_screenshot.png)
-
-game.html
-
-![screenshot of wave.webaim.com validation of game.html](./assets/images/webaim_game.html_screenshot.png)
 
 ## **Debugging**
 
