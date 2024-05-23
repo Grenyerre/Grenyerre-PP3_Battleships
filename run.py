@@ -61,16 +61,16 @@ def create_ships(board):
 
 def get_ship_location():
     print('\n')
-    row = input('  Please enter a row for your shot, (1 - 8): ')
+    row = input(' Please enter a row for your shot, (1 - 8):\n ')
     while row not in '12345678':
-        print('  Number outside of board, invalid row number.')
-        row = input('  Enter a row for your shot, (1 - 8): ')
+        print(' Number outside of board, invalid row number.')
+        row = input(' Enter a row for your shot, (1 - 8):\n ')
 
     print('\n')
-    column = input('  Please enter a column for your shot, (A - H): ').upper()
+    column = input(' Please enter a column for your shot, (A - H):\n ').upper()
     while column not in 'ABCDEFGH':
-        print('  Number outside of board, invalid column letter.')
-        column = input('  Enter a column for your shot, (A - H):').upper()
+        print(' Number outside of board, invalid column letter.')
+        column = input(' Enter a column for your shot, (A - H):\n ').upper()
     return int(row) - 1, letters_to_numbers[column]
 
 
