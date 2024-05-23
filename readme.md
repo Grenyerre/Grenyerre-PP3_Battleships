@@ -74,18 +74,7 @@ Below is a list of the software/applications used in the construction of this pr
   - Used to store and manage the project's code.
 - [Visual Studio Code](https://code.visualstudio.com/)
   - Used as the project's Independent Development Environment (IDE).
-- [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
-  - Used in the testing and debugging process.
-- [W3C Markup Validation Service](https://validator.w3.org/)
-  - Used to validate the project's HTML code.
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-  - Used to validate the project's CSS code.
-- [JSHint](https://jshint.com/)
-  - Used to validate the project's JavaScript code.
-- [MicroSoft Paint](https://microsoft.com > en-us > windows > paint)
-  - Used to create the game's images.
-- [Webaim.](https://webaim.org/resources/contrastchecker/)
-  - Used to check colour scheme for readability.
+
 - [Am I Responsive](https://ui.dev/amiresponsive)
   - Used to create an image of the various display sizes of the site.
 
