@@ -91,17 +91,9 @@ Code was tested via Code Institute's Python Linter to PEP8. There is only one er
 
 ## **Debugging**
 
-1. Functions
-   I amended each function to include a console.log message so that I could tell whether it was being called and under which circumstances this was happening. This helped me to remove a function that had become nested and subsequently was never called.
+After a long discussion with my mentor on my last project, I now aim to ensure each section of my code is working correctly before I continue ontot the next section. This is not always possible but it has reduced my time spent searching for bugs.
 
-2. Naming
-   I like to be clear when I name variables, functions, etc. I find it makes the code easier to follow for myself and other users. However switching between HTML and CSS, and JavaScript led to issues trying to use the same names but only changing the style of the text, eg. cat-name in HTML/CSS became catName in JavaScript. Hence I had to rename variables similarly.
-
-3. Boolean logic
-   An issue arose as I didn't state the logic and equalities for both 'Eaten' and 'Escaped' in my functions. This was rectified by explicitly completing the Boolean arguments.
-
-4. If Else statements
-   Issues arose as I initially relied on an 'else' declaration, instead of explicitly stating each outcome.
+1: When constructing the board, I tried different characters, including a blank space, to show each of the co-ordinates. I chose an upper case letter 'O' to resemble the holes on the plastic version of the game. However when printing the rows, I initially used %d and %s as placeholders for numbers and letters respectively. This continued to cause issues so I changed to a tuple method. The main issue was that the row length extended if a ship or a shot was placed within it. 
 
 ## **Deployment**
 
@@ -109,18 +101,20 @@ This code was deployed utilising Code Institute's mock terminal for Heroku.
 The steps for deployment are as follows:
 - The repository is forked or cloned.
 - A new Heroku app is created.
+- In the Config Vars, the KEY is set to PORT and the VALUE is set to 8000.
 - The buildbacks are set to Python then NodeJS (the order must be maintained).
 - Ensure that the repository is linked to the Heroku app.
+- Choose whether you want 'Automatic Deployment' or 'Manual Deployment'.
 - Click on 'Deploy'.
 
 Thank you to Matt Rudge, Senior Product Developer for Code Institute, for the deployment information.
 
 ## **Credits**
 
-- I would like to credit Garrett upon whose YouTube channel 'Knowledge Mavens' the structure of my code is based.
+- I would like to credit Garrett upon whose YouTube channel projects, 'Knowledge Mavens - Python Battleships' the structure of my code is based.
 - I would like to credit Code Institute upon whose mock terminal this code is deployed.
 - I also visited the following websites: 'Stack Overflow', 'Geeks for Geeks', 'Python Loop' and 'Real Python' to check syntaxes and correct usage of specific techniques.
 
 ## **Acknowledgements**
 
-I would like to thank my mentor Luke Buchanan for his invaluable guidance, understanding and support. Additionally, I would like to thank Dan Bader at realpython.com and finally my wife Tracy for her consistent resilience, support, and encouragement.
+I would like to thank my mentor Luke Buchanan for his invaluable guidance, understanding and support. Additionally, my wife Tracy for her consistent resilience, support, and encouragement.
