@@ -77,6 +77,9 @@ Below is a list of the software/applications used in the construction of this pr
 - If any letter apart from A - H is inputed when a column letter is requested, the player is informed and invited to enter a valid letter.
 [screenshot of invalid column letter entered](C:/Users/rober/PP3_Battleships/assets/invalid_column_letter.png)
 
+- When all of your shots have been used and you have not hit all 5 ships, a message is displayed.
+[screenshot of game over as did not destroy all the 5 ships](C:/Users/rober/PP3_Battleships/assets/invalid_column_letter.png)
+
 
 ### Software Validation Testing
 

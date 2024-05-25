@@ -98,7 +98,7 @@ print('  =====================================================')
 while turns > 0:
 
     print('  =====================================================')
-    print('         You have ' + str(turns) + ' shots left.')
+    print('                   You have ' + str(turns) + ' shots left.')
     print('  =====================================================')
     # Print hidden board for testing purposes
     # print_board(hidden_board)
@@ -119,12 +119,10 @@ while turns > 0:
         guess_board[row][column] = "X"
         turns -= 1
     else:
-        # Do not show message if turns = 1
-        if turns == 1:
-            print('         =========================================')
-            print('         ==                MISS!                ==')
-            print('         =========================================')
-            guess_board[row][column] = "M"
+        print('         =========================================')
+        print('         ==                MISS!                ==')
+        print('         =========================================')
+        guess_board[row][column] = "M"
         turns -= 1
 
     # If the user has hit all the battleships, end the game
