@@ -124,7 +124,7 @@ while turns > 0:
         # Do not show message if turns = 1
         if turns == 1:
             print('         =========================================')
-            print('         ==         MISS! Shoot again.          ==')
+            print('         ==                MISS!                ==')
             print('         =========================================')
             guess_board[row][column] = "M"
         turns -= 1
