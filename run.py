@@ -8,8 +8,6 @@ Legend:
 'M' for missed shot
 """
 
-# import colorama
-# from colorama import Fore, Back, Style
 from random import randint
 
 """

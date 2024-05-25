@@ -22,9 +22,6 @@ As a player:
 - I would like to see a record of where I had placed my previous shots.
 - I would like to know whether my shot was successful or not.
 - I would like to know how many shots I have remaining.
-- 
-
-### **Wireframe**
 
 ### **Gameplay**
 
@@ -42,16 +39,8 @@ This shows the location of any shots previously made and will show the location 
 
 ### **Colour Choice**
 
-The colour palette was created using [color.adobe.com](https://color.adobe.com/create/color-wheel).
-Base colour: #D467F0
-Colour harmony: Shades
-As the images in the game play area are monochromatic, I wanted to utilize colours in the surrounding area. I wanted to have sufficient contrast between the settings and control buttons, and the background.
+I had researched numerous ways of adding colour to the terminal display but was unsatisfied with the results. Subsequently I have stuck to the default colours.
 
-### **Font Choice**
-
-The font is taken from [Google Fonts](https://fonts.google.com/). It is called Englebert.
-
-![image of fonts.google.com Englebert font](./assets/images/englebert.png)
 
 ## **Features**
 
@@ -80,7 +69,7 @@ Below is a list of the software/applications used in the construction of this pr
 ## **Testing**
 
 ### **Game Testing**
-![screenshot of MS Excel testing document](./assets/images/excel_testing_screenshot.png)
+![screenshot of MS Excel testing document](C:/Users/rober/PP3_Battleships/assets/)
 
 
 ### Software Validation Testing
