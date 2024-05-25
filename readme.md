@@ -78,7 +78,7 @@ Below is a list of the software/applications used in the construction of this pr
 [screenshot of invalid column letter entered](C:/Users/rober/PP3_Battleships/assets/invalid_column_letter.png)
 
 - When all of your shots have been used and you have not hit all 5 ships, a message is displayed.
-[screenshot of game over as did not destroy all the 5 ships](C:/Users/rober/PP3_Battleships/assets/invalid_column_letter.png)
+[screenshot of game over as did not destroy all the 5 ships with the 5 shots](C:/Users/rober/PP3_Battleships/assets/out_of_shots.png)
 
 
 ### Software Validation Testing
