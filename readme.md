@@ -80,6 +80,8 @@ Below is a list of the software/applications used in the construction of this pr
 - When all of your shots have been used and you have not hit all 5 ships, a message is displayed.
 [screenshot of game over as did not destroy all the 5 ships with the 5 shots](C:/Users/rober/PP3_Battleships/assets/out_of_shots.png)
 
+- If you destroy all 5 ships, the game ends and you are congratulated.
+[screenshot of game over as all 5 ships destroyed](C:/Users/rober/PP3_Battleships/assets/congratulations.png)
 
 ### Software Validation Testing
 

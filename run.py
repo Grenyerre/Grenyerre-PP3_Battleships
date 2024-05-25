@@ -85,7 +85,7 @@ create_ships(hidden_board)
 
 
 # Set the number of turns (shots) to 10
-turns = 3
+turns = 10
 
 print('  =====================================================')
 print('  ==             Welcome to Battleships              ==')
@@ -101,7 +101,7 @@ while turns > 0:
     print('                 You have ' + str(turns) + ' shot(s) left.')
     print('  =====================================================')
     # Print hidden board for testing purposes
-    # print_board(hidden_board)
+    print_board(hidden_board)
     # Print guess board
     print_board(guess_board)
     row, column = get_ship_location()
