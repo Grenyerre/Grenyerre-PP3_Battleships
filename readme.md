@@ -72,7 +72,7 @@ Below is a list of the software/applications used in the construction of this pr
 [screenshot of opening statement](C:/Users/rober/PP3_Battleships/assets/Opening_stmt.png)
 
 - If any value apart from 1 - 8 is inputed when a row number is requested, the player is informed and invited to enter a valid number.
-[screenshot of invalid row number entered](C:/Users/rober/PP3_Battleships/assets/.png)
+[screenshot of invalid row number entered](C:/Users/rober/PP3_Battleships/assets/invalid_row_number.png)
 
 
 ### Software Validation Testing
