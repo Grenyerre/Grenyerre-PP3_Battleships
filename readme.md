@@ -69,13 +69,16 @@ Below is a list of the software/applications used in the construction of this pr
 ## **Testing**
 
 ### **Game Testing**
-![screenshot of MS Excel testing document](C:/Users/rober/PP3_Battleships/assets/)
+[screenshot of opening statement](C:/Users/rober/PP3_Battleships/assets/Opening_stmt.png)
+
+- If any value apart from 1 - 8 is inputed when a row number is requested, the player is informed and invited to enter a valid number.
+[screenshot of invalid row number entered](C:/Users/rober/PP3_Battleships/assets/.png)
 
 
 ### Software Validation Testing
 
-Code was tested via Code Institute's Python Linter to PEP8. There is only one error showing, "<u>86<u>: E305 expected 2 blank lines after class of function definition, found 1." Lines 87 and 88 are blank.
-
+Code was tested via Code Institute's Python Linter to PEP8. There is only one error showing, "<u>86<u>: E305 expected 2 blank lines after class of function definition, found 1." However lines 87 and 88 are blank.
+![screenshot of Code Institute Linter results](C:/Users/rober/PP3_Battleships/assets/CI_Linter.png)
 
 
 ## **Debugging**
