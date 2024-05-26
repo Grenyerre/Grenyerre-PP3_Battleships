@@ -5,9 +5,9 @@ An enemy has 5 ships located at random locations on an 8 x 8 board, each ship oc
 
 Project Aim: To build a command line application that allows the user to play a logic game. A dataset will be created by the computer and edited by the user.
 
-![Am I Responsive graphic](./assets/).
+![Am I Responsive graphic](./assets/Am_I_Responsive.png).
 
-![Live link to application](https://)
+![Live link to application](https://grenyerre-pp3-battleships-01e3dc747fee.herokuapp.com/)
 
 ## **User Experience (UX) & Design**
 
