@@ -5,9 +5,9 @@ An enemy has 5 ships located at random locations on an 8 x 8 board, each ship oc
 
 Project Aim: To build a command line application that allows the user to play a logic game. A dataset will be created by the computer and edited by the user.
 
-![Am I Responsive graphic](./assets/images/).
+![Am I Responsive graphic](./assets/).
 
-[Live link to application](https://)
+![Live link to application](https://)
 
 ## **User Experience (UX) & Design**
 
@@ -69,24 +69,24 @@ Below is a list of the software/applications used in the construction of this pr
 ## **Testing**
 
 ### **Game Testing**
-[screenshot of opening statement](C:/Users/rober/PP3_Battleships/assets/Opening_stmt.png)
+![screenshot of opening statement](./assets/Opening_stmt.png)
 
 - If any value apart from 1 - 8 is inputed when a row number is requested, the player is informed and invited to enter a valid number.
-[screenshot of invalid row number entered](C:/Users/rober/PP3_Battleships/assets/invalid_row_number.png)
+![screenshot of invalid row number entered](./assets/invalid_row_number.png)
 
 - If any letter apart from A - H is inputed when a column letter is requested, the player is informed and invited to enter a valid letter.
-[screenshot of invalid column letter entered](C:/Users/rober/PP3_Battleships/assets/invalid_column_letter.png)
+![screenshot of invalid column letter entered](./assets/invalid_column_letter.png)
 
 - When all of your shots have been used and you have not hit all 5 ships, a message is displayed.
-[screenshot of game over as did not destroy all the 5 ships with the 5 shots](C:/Users/rober/PP3_Battleships/assets/out_of_shots.png)
+![screenshot of game over as did not destroy all the 5 ships with the 5 shots](./assets/out_of_shots.png)
 
 - If you destroy all 5 ships, the game ends and you are congratulated.
-[screenshot of game over as all 5 ships destroyed](C:/Users/rober/PP3_Battleships/assets/congratulations.png)
+![screenshot of game over as all 5 ships destroyed](./assets/congratulations.png)
 
 ### Software Validation Testing
 
 Code was tested via Code Institute's Python Linter to PEP8. There is only one error showing, "<u>86<u>: E305 expected 2 blank lines after class of function definition, found 1." However lines 87 and 88 are blank.
-![screenshot of Code Institute Linter results](C:/Users/rober/PP3_Battleships/assets/CI_Linter.png)
+![screenshot of Code Institute Linter results](./assets/CI_Linter.png)
 
 
 ## **Debugging**
