@@ -83,7 +83,7 @@ Below is a list of the software/applications used in the construction of this pr
 
 ![screenshot of game over as did not destroy all the 5 ships with the 5 shots](./assets/out_of_shots.png)
 
-- If you destroy all 5 ships, the game ends and you are congratulated.
+- If you destroy all 5 ships, the game ends and you are congratulated. In the image below the hidden board is on show, this was only for testing purposes.
 
 ![screenshot of game over as all 5 ships destroyed](./assets/congratulations.png)
 
