@@ -100,7 +100,7 @@ while turns > 0:
     print('  =====================================================')
     print('                 You have ' + str(turns) + ' shot(s) left.')
     print('  =====================================================')
-    # Print hidden board for testing purposes
+    # Print hidden board only for testing purposes
     print_board(hidden_board)
     # Print guess board
     print_board(guess_board)

@@ -72,20 +72,25 @@ Below is a list of the software/applications used in the construction of this pr
 ![screenshot of opening statement](./assets/Opening_stmt.png)
 
 - If any value apart from 1 - 8 is inputed when a row number is requested, the player is informed and invited to enter a valid number.
+
 ![screenshot of invalid row number entered](./assets/invalid_row_number.png)
 
 - If any letter apart from A - H is inputed when a column letter is requested, the player is informed and invited to enter a valid letter.
+
 ![screenshot of invalid column letter entered](./assets/invalid_column_letter.png)
 
 - When all of your shots have been used and you have not hit all 5 ships, a message is displayed.
+
 ![screenshot of game over as did not destroy all the 5 ships with the 5 shots](./assets/out_of_shots.png)
 
 - If you destroy all 5 ships, the game ends and you are congratulated.
+
 ![screenshot of game over as all 5 ships destroyed](./assets/congratulations.png)
 
 ### Software Validation Testing
 
 Code was tested via Code Institute's Python Linter to PEP8. There is only one error showing, "<u>86<u>: E305 expected 2 blank lines after class of function definition, found 1." However lines 87 and 88 are blank.
+
 ![screenshot of Code Institute Linter results](./assets/CI_Linter.png)
 
 
